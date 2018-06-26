@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3938309A-6773-489C-BE13-BEFB7417A0F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Register</RootNamespace>
+    <AssemblyName>Register</AssemblyName>
+    <ApplicationIcon>Resources\bty4u_256.ico</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloverConnector">
+      <HintPath>..\Dll\Clover1.3.2\CloverConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="CloverWindowsSDK">
+      <HintPath>..\Dll\Clover1.3.2\CloverWindowsSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="CloverWindowsSDKServiceClient">
+      <HintPath>..\Dll\Clover1.3.2\CloverWindowsSDKServiceClient.dll</HintPath>
+    </Reference>
+    <Reference Include="CloverWindowsTransport">
+      <HintPath>..\Dll\Clover1.3.2\CloverWindowsTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="Grapevine">
+      <HintPath>..\Dll\Clover1.3.2\Grapevine.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUsbDotNet">
+      <HintPath>..\Dll\Clover1.3.2\LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Dll\Clover1.3.2\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>..\Dll\Clover1.3.2\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\Dll\Clover1.3.2\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\Dll\Clover1.3.2\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutRegister.designer.cs">
+      <DependentUpon>AboutRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicSetup.Designer.cs">
+      <DependentUpon>BasicSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashOption.designer.cs">
+      <DependentUpon>CashOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashWithdraw.designer.cs">
+      <DependentUpon>CashWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeQty.designer.cs">
+      <DependentUpon>ChangeQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClosingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClosingRegister.designer.cs">
+      <DependentUpon>ClosingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="com\clover\remotepay\transport\remote\Callback.cs" />
+    <Compile Include="com\clover\remotepay\transport\remote\CloverCallbackListenerService.cs" />
+    <Compile Include="com\clover\remotepay\transport\remote\RemoteRESTCloverConfiguration.cs" />
+    <Compile Include="com\clover\remotepay\transport\remote\RemoteRESTCloverConnector.cs" />
+    <Compile Include="com\clover\remotepay\transport\remote\RemoteWebSocketCloverConfiguration.cs" />
+    <Compile Include="com\clover\remotepay\transport\remote\RemoteWebSocketCloverConnector.cs" />
+    <Compile Include="ConfirmPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmPaymentForm.designer.cs">
+      <DependentUpon>ConfirmPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouponGenerate.Designer.cs">
+      <DependentUpon>CouponGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouponList.Designer.cs">
+      <DependentUpon>CouponList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouponRedeem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouponRedeem.Designer.cs">
+      <DependentUpon>CouponRedeem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditOption.designer.cs">
+      <DependentUpon>CreditOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMain.designer.cs">
+      <DependentUpon>CustomerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discount.designer.cs">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindItem.Designer.cs">
+      <DependentUpon>FindItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloverPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloverPayment.Designer.cs">
+      <DependentUpon>CloverPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirthdayMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirthdayMessage.Designer.cs">
+      <DependentUpon>BirthdayMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondAuthentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondAuthentication.Designer.cs">
+      <DependentUpon>SecondAuthentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputCashierID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputCashierID.Designer.cs">
+      <DependentUpon>InputCashierID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPasscode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPasscode.designer.cs">
+      <DependentUpon>InputPasscode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipMerging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipMerging.Designer.cs">
+      <DependentUpon>MembershipMerging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiftCardOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiftCardOption.Designer.cs">
+      <DependentUpon>GiftCardOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiftcardRedeem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiftcardRedeem.Designer.cs">
+      <DependentUpon>GiftcardRedeem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputGiftcardCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputGiftcardCode.Designer.cs">
+      <DependentUpon>InputGiftcardCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputReceiptID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputReceiptID.Designer.cs">
+      <DependentUpon>InputReceiptID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JewelryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JewelryList.Designer.cs">
+      <DependentUpon>JewelryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipMain.Designer.cs">
+      <DependentUpon>MembershipMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="OverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterNewCustomer.designer.cs">
+      <DependentUpon>RegisterNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReprintRegisterTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReprintRegisterTransaction.Designer.cs">
+      <DependentUpon>ReprintRegisterTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReprintStoreCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReprintStoreCredit.Designer.cs">
+      <DependentUpon>ReprintStoreCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignatureForm.designer.cs">
+      <DependentUpon>SignatureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignaturePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignaturePanel.designer.cs">
+      <DependentUpon>SignaturePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialDiscount.Designer.cs">
+      <DependentUpon>SpecialDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartRegister.Designer.cs">
+      <DependentUpon>StartRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jewelry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jewelry.Designer.cs">
+      <DependentUpon>Jewelry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegister.designer.cs">
+      <DependentUpon>LoginRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerTools.designer.cs">
+      <DependentUpon>ManagerTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPStoreCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPStoreCredit.Designer.cs">
+      <DependentUpon>MPStoreCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPTerminal.Designer.cs">
+      <DependentUpon>MPTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplePayment.Designer.cs">
+      <DependentUpon>MultiplePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTimeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTimeCard.designer.cs">
+      <DependentUpon>MyTimeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoBarcodeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoBarcodeItem.designer.cs">
+      <DependentUpon>NoBarcodeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberPad.Designer.cs">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentMethods.Designer.cs">
+      <DependentUpon>PaymentMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointsRedeem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointsRedeem.designer.cs">
+      <DependentUpon>PointsRedeem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutRegister.resx">
+      <DependentUpon>AboutRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BasicSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashOption.resx">
+      <DependentUpon>CashOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashWithdraw.resx">
+      <DependentUpon>CashWithdraw.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeQty.resx">
+      <DependentUpon>ChangeQty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClosingRegister.resx">
+      <DependentUpon>ClosingRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmPaymentForm.resx">
+      <DependentUpon>ConfirmPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponGenerate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CouponGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponList.resx">
+      <DependentUpon>CouponList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouponRedeem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CouponRedeem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditOption.resx">
+      <DependentUpon>CreditOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMain.resx">
+      <DependentUpon>CustomerMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discount.resx">
+      <DependentUpon>Discount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloverPayment.resx">
+      <DependentUpon>CloverPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirthdayMessage.resx">
+      <DependentUpon>BirthdayMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondAuthentication.resx">
+      <DependentUpon>SecondAuthentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputCashierID.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputCashierID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPasscode.resx">
+      <DependentUpon>InputPasscode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipMerging.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MembershipMerging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiftCardOption.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GiftCardOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiftcardRedeem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GiftcardRedeem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputGiftcardCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputGiftcardCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputReceiptID.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputReceiptID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JewelryList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JewelryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MembershipMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayForm.resx">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterNewCustomer.resx">
+      <DependentUpon>RegisterNewCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReprintRegisterTransaction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReprintRegisterTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReprintStoreCredit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReprintStoreCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignatureForm.resx">
+      <DependentUpon>SignatureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignaturePanel.resx">
+      <DependentUpon>SignaturePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialDiscount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpecialDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartRegister.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StartRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jewelry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Jewelry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegister.resx">
+      <DependentUpon>LoginRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerTools.resx">
+      <DependentUpon>ManagerTools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPStoreCredit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPStoreCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPTerminal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplePayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MultiplePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTimeCard.resx">
+      <DependentUpon>MyTimeCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoBarcodeItem.resx">
+      <DependentUpon>NoBarcodeItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberPad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentMethods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaymentMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointsRedeem.resx">
+      <DependentUpon>PointsRedeem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReprintReceipt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReprintReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return.resx">
+      <DependentUpon>Return.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectUpc.resx">
+      <DependentUpon>SelectUpc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreCreditOption.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StoreCreditOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Terminal.resx">
+      <DependentUpon>Terminal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReprintReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReprintReceipt.Designer.cs">
+      <DependentUpon>ReprintReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return.designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectUpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectUpc.designer.cs">
+      <DependentUpon>SelectUpc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusAPI.cs" />
+    <Compile Include="StoreCreditOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreCreditOption.Designer.cs">
+      <DependentUpon>StoreCreditOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Terminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Terminal.designer.cs">
+      <DependentUpon>Terminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bty4u.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bty4u_v2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bty4u_256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\beauty4ulogohalf.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,7 @@
+D:\Work\Beauty4U\AppIdle\bin\Debug\ApplicationIdleDemo.exe
+D:\Work\Beauty4U\AppIdle\bin\Debug\ApplicationIdleDemo.pdb
+D:\Work\Beauty4U\AppIdle\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Beauty4U\AppIdle\obj\Debug\Demo.Form1.resources
+D:\Work\Beauty4U\AppIdle\obj\Debug\ApplicationIdleDemo.csproj.GenerateResource.Cache
+D:\Work\Beauty4U\AppIdle\obj\Debug\ApplicationIdleDemo.exe
+D:\Work\Beauty4U\AppIdle\obj\Debug\ApplicationIdleDemo.pdb

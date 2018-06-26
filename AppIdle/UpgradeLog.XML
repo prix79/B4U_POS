@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ApplicationIdleDemo">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\ApplicationIdleDemo.sln">
+</Property><Property Name="Date" Value="Thursday, June 16, 2016">
+</Property><Property Name="Time" Value="13:44 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ApplicationIdleDemo.sln" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\ApplicationIdleDemo.sln">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="ApplicationIdleDemo.csproj" Description="Project file successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\ApplicationIdleDemo.csproj">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="ApplicationIdleTimer.cs" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\ApplicationIdleTimer.cs">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="Form1.cs" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="Form1.resx" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\ApplicationIdle_Src\AppIdle\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="ApplicationIdleDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ApplicationIdleDemo" Source="ApplicationIdleDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ApplicationIdleDemo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ApplicationIdleDemo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ApplicationIdleDemo" Source="ApplicationIdleDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

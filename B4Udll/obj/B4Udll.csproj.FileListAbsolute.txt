@@ -1,0 +1,5 @@
+D:\Work\Beauty4U\B4Udll\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Beauty4U\B4Udll\bin\Debug\B4Udll.dll
+D:\Work\Beauty4U\B4Udll\bin\Debug\B4Udll.pdb
+D:\Work\Beauty4U\B4Udll\obj\Debug\B4Udll.dll
+D:\Work\Beauty4U\B4Udll\obj\Debug\B4Udll.pdb
