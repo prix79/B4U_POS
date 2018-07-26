@@ -445,71 +445,63 @@ namespace Register
             {
                 if (cmbStoreName.Text == "TEMPLE HILLS")
                 {
-                    //serverConnectionString = "Server=HQ-SERVER;Database=TempleHills;UID=ssk;Password=cherry";
-                    serverConnectionString = "Data Source=173.167.197.49,41479;Network Library=DBMSSOCN;Initial Catalog=TempleHills;User ID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "OXON HILL")
                 {
-                    serverConnectionString = "Server=OH-SERVER;Database=OxonHill;UID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "UPPER MARLBORO")
                 {
-                    serverConnectionString = "Server=KTSC-SERVER;Database=KTSC;UID=ssk;Password=cherry";
-                    //serverConnectionString = "Data Source=;Network Library=DBMSSOCN;Initial Catalog=;User ID=;Password=";                    
+                    serverConnectionString = "";               
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "CAPITOL HEIGHTS")
                 {
-                    serverConnectionString = "Server=CH-SERVER;Database=CapitolHeights;UID=ssk;Password=cherry";
-                    //serverConnectionString = "Data Source=, ;Network Library=DBMSSOCN;Initial Catalog=;User ID=;Password=";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "WINDSOR MILL")
                 {
-                    serverConnectionString = "Server=WM-SERVER;Database=WindsorMill;UID=ssk;Password=cherry";
-                    //serverConnectionString = "Data Source= ;Network Library=DBMSSOCN;Initial Catalog=;User ID=;Password=";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "CATONSVILLE")
                 {
-                    serverConnectionString = "Server=CV-SERVER;Database=Catonsville;UID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "PRINCE WILLIAM")
                 {
-                    serverConnectionString = "Server=PW-SERVER;Database=PrinceWilliam;UID=ssk;Password=cherry";
-                    //serverConnectionString = "Data Source=;Network Library=DBMSSOCN;Initial Catalog=PrinceWilliam;User ID=;Password=";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "WOODBRIDGE")
                 {
-                    serverConnectionString = "Server=WB-SERVER;Database=Woodbridge;UID=ssk;Password=cherry";
-                    //serverConnectionString = "Data Source=, ;Network Library=DBMSSOCN;Initial Catalog=;User ID=;Password=";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "WALDORF")
                 {
-                    //serverConnectionString = "Server=WD-SERVER;Database=Waldorf;UID=ssk;Password=cherry";
-                    serverConnectionString = "Data Source=23.24.125.205,41479;Network Library=DBMSSOCN;Initial Catalog=Waldorf;User ID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
 
                 else if (cmbStoreName.Text == "GAITHERSBURG")
                 {
-                    //serverConnectionString = "Server=GB-SERVER;Database=Gaithersburg;UID=ssk;Password=cherry";
-                    serverConnectionString = "Data Source=;Network Library=DBMSSOCN;Initial Catalog=;User ID=;Password=";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "BOWIE")
                 {
-                    serverConnectionString = "Server=BW-SERVER;Database=Bowie;UID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else if (cmbStoreName.Text == "TEST")
                 {
-                    serverConnectionString = "Server=HQ-DEVELOPER;Database=TestDB;UID=ssk;Password=cherry";
+                    serverConnectionString = "";
                     conn = new SqlConnection(serverConnectionString);
                 }
                 else
