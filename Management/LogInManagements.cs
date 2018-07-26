@@ -22,22 +22,20 @@ namespace Management
         public SqlConnection conn;
         public string serverConnectionString;
 
-        //public string B4UHQCS = "Server=B4U-SERVER;Database=Beauty4U_HQ;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string B4UHQCS = "Data Source=173.167.197.50,41479;Network Library=DBMSSOCN;Initial Catalog=Beauty4U_HQ;UID=ssk;Password=cherry";
-        public string B4UWHCS = "Server=B4U-SERVER;Database=Beauty4UWarehouse;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string CHCS = "Server=CH-SERVER;Database=CapitolHeights;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string OHCS = "Server=OH-SERVER;Database=OxonHill;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string WBCS = "Server=WB-SERVER;Database=Woodbridge;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string CVCS = "Server=CV-SERVER;Database=Catonsville;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string UMCS = "Server=KTSC-SERVER;Database=KTSC;UID=ssk;Password=cherry;Connect Timeout=10";
-        //public string WMCS = "Data Source=;Network Library=DBMSSOCN;Initial Catalog=WindsorMill;UID=ssk;Password=cherry";
-        public string WMCS = "Server=WM-SERVER;Database=WindsorMill;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string THCS = "Server=HQ-SERVER;Database=TempleHills;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string WDCS = "Server=WD-SERVER;Database=Waldorf;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string PWCS = "Server=PW-SERVER;Database=PrinceWilliam;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string GBCS = "Server=GB-SERVER;Database=Gaithersburg;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string BWCS = "Server=BW-SERVER;Database=Bowie;UID=ssk;Password=cherry;Connect Timeout=10";
-        public string Test1CS = "Server=HQ-DEVELOPER;Database=TestDB;UID=ssk;Password=cherry;Connect Timeout=10";
+        public string B4UHQCS = "";
+        public string B4UWHCS = "";
+        public string CHCS = "";
+        public string OHCS = "";
+        public string WBCS = "";
+        public string CVCS = "";
+        public string UMCS = "";
+        public string WMCS = "";
+        public string THCS = "";
+        public string WDCS = "";
+        public string PWCS = "";
+        public string GBCS = "";
+        public string BWCS = "";
+        public string Test1CS = "";
         public string Test2CS = "";
 
         //Connection string example : "Data Source=,;Network Library=DBMSSOCN;Initial Catalog=;UID=;Password=";
